@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { scroll-behavior: smooth; }
+html, body, #root { height: 100%; }
+body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+/* Texte en dégradé (couleurs logo) */
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(90deg, #4B9EFF 0%, #2C42E2 40%, #9E49FC 100%);
+}
+
+/* Cartes glass */
+.glass {
+  @apply rounded-2xl border border-white/10 bg-white/70 backdrop-blur-md shadow-soft;
+}
